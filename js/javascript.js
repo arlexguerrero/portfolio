@@ -89,3 +89,61 @@ let ScrollTop = document.querySelector('.scroll-top');
 window.addEventListener('scroll', () => {
 	ScrollTop.classList.toggle('scroll-active', window.scrollY >= 400);
 });
+
+// tabs portfolio
+
+const pestanas = document.querySelectorAll('.pestanas ul li');
+const bloques = document.querySelectorAll('.contenido-pestanas .bloque');
+
+
+pestanas.forEach(function(tab, tab_index){
+	tab.addEventListener('click', function(){
+		pestanas.forEach(function(tab){
+			tab.classList.remove('btn-activo');
+		});
+
+		tab.classList.add('btn-activo');
+
+		bloques.forEach(function(content, content_index){
+			
+			if(content_index == tab_index) {
+				content.style.display = "block"; 
+			} else {
+				content.style.display = "none";
+			}
+		});
+	});
+});
+
+// function despliegaPestana(evento) {
+// 	//Recojo el evento click en el parámetro "evento" y evito que abra el enlace
+// 	evento.preventDefault();
+	
+// 	//Recupero el href del enlace de la pestaña con la palabra this, que hace referencia al elemento que ha lanzado el evento
+// 	var objetivo = this.getAttribute("href");
+	
+
+
+  
+// 	//Oculto todos los bloques
+// 	document
+// 	  .querySelectorAll(".contenido-pestanas .bloque")
+// 	  .forEach(function(elemento) {
+// 		elemento.classList.remove("activo");
+// 	  });
+
+	  
+  
+// 	//Muestro el bloque objetivo
+// 	document.querySelector(objetivo).classList.add("activo");
+
+	
+	
+
+//   }
+  
+//   //Asigno la función despliegaPestana al evento click de los enlaces de pestaña
+//   document.querySelectorAll(".btn-pestanas").forEach(function(elemento) {
+// 	elemento.addEventListener("click", despliegaPestana);
+//   });
+  
