@@ -72,30 +72,44 @@
     </section>
 
     <!--About-->
-    <section class="about container" id="acercade">
-        <!--headding-->
-        <h2 class="heading"> Quien soy</h2>
-        <!--About content-->
-        <div class="about-content">
-            <div class="about-data">
-                <span>Acerca de mi</span>
-                <h2>Diseñador visual, web jr lustrador vectorial, <br> diseñador de marca o Branding y modelador
-                    arquitectonico 3D (ArchViz) en proceso </h2>
-                <a target="_blank" href="https://sgvisualdesign.com/docs/CV-Sergio-Guerrero-diseno-web.pdf" class="btn">
-                    Descargar Cv
-                    <i class='bx bx-download'></i>
+    <section class="about" id="acercade">
 
-                </a>
-            </div>
-            <div class="about-text">
-                <p>Apasionado por aprender cosas nuevas en el amplio universo del diseño visual enfocado al mundo
-                    digital.</p>
-                <P>Fiel creyente del trabajo en equipo y colaborativo que permita el cumplimiento de metas, logros u
-                    objetivos que satisfagan las necesidades del cliente final.</P>
-                <p>Me gusta el desarrollo web, ilustración vectorial y modelado arquitectónico 3D disciplinas en las que
-                    trabajo constantemente para ser de los mejores</p>
+        <div class="container">
+            <!--headding-->
+            <h2 class="heading"> Quien soy</h2>
+            <!--About content-->
+            <div class="about-content">
+                <div class="about-data">
+                    <span>Acerca de mi</span>
+                    <h2>
+                        <ul>
+                            <li>Diseñador visual</li>
+                            <li>Diseñador web jr</li>
+                            <li>lustrador vectorial</li>
+                            <li>modelador arquitectonico 3D (ArchViz) en proceso</li>
+                        </ul>
+
+
+                    </h2>
+                    <a target="_blank" href="https://sgvisualdesign.com/docs/CV-Sergio-Guerrero-diseno-web.pdf"
+                        class="btn">
+                        Descargar Cv
+                        <i class='bx bx-download'></i>
+
+                    </a>
+                </div>
+                <div class="about-text">
+                    <p>Apasionado por aprender cosas nuevas en el amplio universo del diseño visual enfocado al mundo
+                        digital.</p>
+                    <P>Fiel creyente del trabajo en equipo y colaborativo que permita el cumplimiento de metas, logros u
+                        objetivos que satisfagan las necesidades del cliente final.</P>
+                    <p>Me gusta el desarrollo web, ilustración vectorial y modelado arquitectónico 3D disciplinas en las
+                        que
+                        trabajo constantemente para ser de los mejores</p>
+                </div>
             </div>
         </div>
+
     </section>
     <!--Services-->
 
@@ -184,13 +198,32 @@
                         <div class="gallery__container">
                             <div class="row">
                                 <div class="container__banner">
-                                    <img src="img/AK-PPLA-4-ASUS-PORT-K3400PA-26MARZO.jpg" class="img-fluid" alt="">
+                                    <picture>
+                                        <source class="img-fluid" media="(max-width: 799px)"
+                                            srcset="img/AK-PPLA-4-ASUS-PORT-K3400PA-26MARZO-MOB.jpg" />
+                                        <source class="img/img-fluid" media="(min-width: 800px)"
+                                            srcset="img/AK-PPLA-4-ASUS-PORT-K3400PA-26MARZO.jpg" />
+                                        <img src="img/AK-PPLA-4-ASUS-PORT-K3400PA-26MARZO.jpg" class="img-fluid" alt="">
+                                    </picture>
                                 </div>
                                 <div class="container__banner">
-                                    <img src="img/AK-PPLA-4-LENOVO-10OFF-TCA-29ENERO.jpg" class="img-fluid" alt="">
+                                    <picture>
+                                        <source class="img-fluid" media="(max-width: 799px)"
+                                            srcset="img/AK-PPLA-4-LENOVO-10OFF-TCA-29ENERO-MOB.jpg" />
+                                        <source class="img-fluid" media="(min-width: 800px)"
+                                            srcset="img/AK-PPLA-4-LENOVO-10OFF-TCA-29ENERO.jpg" />
+                                        <img src="img/AK-PPLA-4-LENOVO-10OFF-TCA-29ENERO.jpg" class="img-fluid" alt="">
+                                    </picture>
                                 </div>
                                 <div class="container__banner">
-                                    <img src="img/Recurso 1-100.jpg" class="img-fluid" alt="">
+                                    <picture>
+                                        <source class="img-fluid" srcset="img/ANIVERSARIO-MOB.jpg"
+                                            media="(max-width: 799px)">
+                                        <source class="img-fluid" srcset="img/ANIVERSARIO-DESKTOP.jpg"
+                                            media="(min-width: 800px)">
+                                        <img src="img/ANIVERSARIO-DESKTOP.jpg" class="img-fluid" alt="">
+                                    </picture>
+
                                 </div>
                             </div>
                         </div>
@@ -201,21 +234,21 @@
                         </div>
                     </div>
                     <div class="bloque" id="pestana3">
-                        Contenido 333333333
+                        En construcción
                     </div>
                     <div class="bloque" id="pestana4">
-                        Contenido 333333333FGFG
+                        En construcción
                     </div>
                     <div class="bloque" id="pestana5">
-                        Contenido 3333333FGFGFGFGFGHGJHGJHJ
+                        En construcción
                     </div>
                 </div>
             </div>
             <div class="alert-containert my-2">
                 <i class='bx bxs-error'></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate reiciendis nostrum quo quibusdam,
-                    ipsam cumque distinctio atque quisquam! Excepturi perferendis nesciunt quam nihil explicabo dolore
-                    repellat distinctio aliquam, iure voluptates.</p>
+                <p> <strong>Disclaimer:</strong> las piezas presentadas en este portafolio hacen parte de una muestra
+                    compilada de de participaciones y desarrollos en las empresas o compañías anteriormente mencionadas,
+                    las cuales no tienen ninguna validez comercial. </p>
             </div>
         </div>
     </section>
@@ -227,11 +260,11 @@
         <!--heading-->
         <h2 class="heading">Contact</h2>
         <form action="" class="contact-form" id="contact">
-            <input type="text" placeholder="your Name" class="name" required>
-            <input type="email" name="" id="" placeholder="E-mail address" class="email" required>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write message here" class="message"
+            <input type="text" placeholder="Nombre" class="name" required>
+            <input type="email" name="" id="" placeholder="direcón de E-mail" class="email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aquí" class="message"
                 required></textarea>
-            <input type="submit" value="send" class="send-btn">
+            <input type="submit" value="enviar" class="send-btn  ">
         </form>
     </section>
 
@@ -244,7 +277,7 @@
             <!-- <a href="#">
                 <i class="bx bxl-facebook"></i>
             </a> -->
-            <!-- <a href="https://www.instagram.com/sg_design_co/"><i class="bx bxl-instagram"></i></a> -->
+            <a href="https://www.instagram.com/sg_design_co/"><i class="bx bxl-instagram"></i></a>
             <a href="https://github.com/arlexguerrero"><i class="bx bxl-github"></i></a>
         </div>
         <!--footer links-->
@@ -268,9 +301,7 @@
         (function () {
             emailjs.init('IGZhwc5KZ9sixpD9i');
         })();
-
     </script>
-
 
 
     <!--link-swipper-->

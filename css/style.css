@@ -36,15 +36,29 @@
 body {
     color: var(--bg-color);
     background-color: var(--body-color);
+    
 }
+
+
+html{
+    scrollbar-width: 0.5rem;
+    scrollbar-color: #09C  var(--headding-color);
+}
+
 
 html::-webkit-scrollbar{
-    width: 0.5rem;
-    background: transparent;
+    width: 1rem;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-html::-webkit-scrollbar-thumnb{
+html::-webkit-scrollbar-thumb{
+    background-color: var(--container-color);
+    height: 0.8rem;
+}
+
+html::-webkit-scrollbar-track{
     background: var(--headding-color);
+    height: 0.8rem;
 }
 
 
@@ -345,6 +359,21 @@ font-weight: 600;
     opacity: 0.7;
 }
 
+@media (min-width: 769px) {
+    .about {
+        height: 100%;
+    }
+    
+}
+
+
+.about {
+    background-color: #fff;
+
+    
+}
+
+
 .about-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -359,10 +388,16 @@ font-weight: 600;
 }
 
 .about-data h2{
-    font-size: 2rem;
-    line-height: 2.6rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 700;
     margin: 1rem 0;
+    color: var(--box-color);
+}
+
+h2 ul li{
+    list-style: disc;
+    list-style-position: outside;
 }
 
 .btn{
@@ -391,12 +426,16 @@ font-weight: 600;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
   }
+
+
 .about-text p{
     font-size: 0.938rem;
     letter-spacing: 1px;
-    text-align: justify;
+    text-align: start;
     margin-bottom: 1.5rem;
+    color: var(--box-color);
 
 
 }
@@ -644,12 +683,14 @@ justify-content: center;
     font-weight: 500px;
     text-transform: uppercase;
     padding: 12px;
-    background: var(--main-color);
+    background: var(--container-color);
+    
     cursor: pointer;
 }
 
 .send-btn:hover{
-    background: #546eff;
+    
+    background: var(--box-color);
     transition: 0.3s all linear;
 }
 
@@ -783,8 +824,8 @@ justify-content: center;
 
     .navbar{
         position: absolute;
-        top: 0;
-        right: -100%;
+        top: 50px;
+        /* right: -100%; */
         width: 300px;
 height: 100vh;
 background: var(--box-color);
@@ -792,9 +833,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 50px 20px;
+visibility: collapse;
     }
 
     .open-menu{
+        visibility: visible;
         right: 0;
         transition:  0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
     }
@@ -921,7 +964,9 @@ TABS
   
   .pestanas ul{
     display: flex;
+    overflow-x: hidden;
     justify-content: space-between;
+    gap: 1em;
   }
   
   .btn-pestanas {
@@ -934,6 +979,7 @@ TABS
     width: 187px;
     text-align: center;
     cursor: pointer;
+    white-space: nowrap;
   }
 
 

@@ -90,6 +90,10 @@ window.addEventListener('scroll', () => {
 	ScrollTop.classList.toggle('scroll-active', window.scrollY >= 400);
 });
 
+
+
+
+
 // tabs portfolio
 
 const pestanas = document.querySelectorAll('.pestanas ul li');
