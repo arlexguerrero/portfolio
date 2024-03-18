@@ -1,0 +1,117 @@
+
+/* Variables*/
+:root {
+
+    --main-color: #fdf0d5ff ;
+    --body-color: #669bbcff;
+    --container-color: rgb(0, 132, 203);
+    --headding-color: #222231;
+    --box-color: #1b1b1b;
+    --bg-color: #fff;
+
+    /* CSS HEX */
+    /*--headding-color: #780000ff rojo oscuro;
+--container-color: #c1121fff rojo;
+--body-color: #fdf0d5ff color marfil;
+--main-color: #003049ff azul oscuro;
+--container-color: #669bbcff azul claro;
+--bg-color: #fff; blanco*/
+
+}
+
+body {
+    color: var(--bg-color);
+    background-color: var(--body-color);
+    
+}
+
+
+html{
+    scrollbar-width: 0.5rem;
+    scrollbar-color: #09C  var(--headding-color);
+}
+
+
+html::-webkit-scrollbar{
+    width: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--container-color);
+    height: 0.8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--headding-color);
+    height: 0.8rem;
+}
+
+
+
+.d-none {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 3rem 0 3rem 0;
+    margin: 3rem 0rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.py-3 {
+    padding: 3rem 0rem;
+}
+
+.my-2 {
+    margin: 2rem 0rem;
+}
+
+.my-3 {
+    margin: 3rem 0rem;
+}
+
+
+.py-4 {
+    padding: 4rem 0rem;
+}
+
+.my-4 {
+    margin: 4rem 0rem;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.container {
+    max-width: 1049px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    row-gap: 24px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.img-fluid {
+    width: 100%;
+}

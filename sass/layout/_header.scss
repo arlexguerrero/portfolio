@@ -1,0 +1,58 @@
+/*==========
+    Header
+===========*/
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-active{
+    background: var(--box-color);
+    transition: 0.4s;
+}
+
+.normal-logo {
+    color: var(--headding-color);
+}
+
+.logo-active {
+    color: #fff;
+}
+
+/*Nav*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.nav-link {
+    font-size: 0.94rem;
+    padding: 4px 8px;
+    border-radius: 0.2rem;
+    color: var(--bg-color);
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+    background: var(--container-color);
+    transition: 0.3s all;
+}

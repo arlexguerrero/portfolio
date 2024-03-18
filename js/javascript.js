@@ -72,14 +72,10 @@ function success(){
 // header background change on scroll
 
 let header = document.querySelector('header');
-let logoHeader = document.querySelector('.logo');
-let logoHeaderNormal = document.querySelector('.logo');
-logoHeaderNormal.classList.add('normal-logo');
 
 
 window.addEventListener('scroll', () => {
 	header.classList.toggle('header-active', window.scrollY > 0);
-	logoHeader.classList.toggle('logo-active', window.scrollY > 0);
 });
 
 //scroll top
