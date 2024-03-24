@@ -8,6 +8,8 @@ header {
     left: 0;
     width: 100%;
     z-index: 100;
+    background-color: var(--box-color);
+    border-bottom: 1px solid #42D8F9;
 }
 
 .header-active{
@@ -29,7 +31,44 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0;
+    padding: 20px 2rem;
+
+    @media (max-width: 769px ){
+
+        justify-content: flex-end;
+
+        .menu-icon {
+            display: flex;
+        }
+        
+        .navbar{
+            position: absolute;
+            top: 50px;
+            /* right: -100%; */
+            width: 300px;
+            height: 100vh;
+            background: var(--box-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            visibility: collapse;
+            opacity: 0;
+        }
+
+        .open-menu{
+            opacity: 1;
+            visibility: visible;
+            right: 0;
+            transition:  0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    
+        .nav-link{
+            display: block;
+            margin: 1rem 0;
+        }
+    }
+
 }
 
 .logo {

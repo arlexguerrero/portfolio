@@ -38,124 +38,6 @@ transition: 0.3s;
 ===========*/
 
 
-/*==========
-    Home
-===========*/
-.home{
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 7rem;
-}
-
-.home-content{
-    position: relative;
-    max-width: 600px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-}
-
-.home-img{
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background: #fff;
-    overflow: hidden;
-    margin-bottom: 2rem;
-
-}
-
-.home-img{
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    object-position: center;
-
-}
-
-.home-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.home-text h3{
-    position: relative;
-    display: flex;
-    align-items: center;
-    column-gap:  0.5rem;
-    font-size:  1.1rem;
-    color: var(--headding-color);
-}
-
-.home-text h3::before{
-   content: '';
-   position: absolute;
-   top: 50%;
-   transform: translate(-50%);
-   left: -16px;
-   width: 20px;
-   height: 2px;
-   background: var(--headding-color);
-}
-
-.home-text h3::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%);
-    right: -35px;
-    width: 20px;
-    height: 2px;
-    background: var(--headding-color);
- }
-
-.home-text h2{
-    font-size: 3.5rem;
-    line-height: 4.8rem;
-
-}
-
-.home-text p {
-    font-size: 0.938rem;
-    margin-bottom: 1.5rem;
-}
-
-.home-text .color{
-color: var(--headding-color);
-font-weight: 600;
-}
-
-
-.social{
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
-   
-}
-
-.social .bx{
-    font-size: 1.3rem;
-    padding: 10px;
-    border-radius:  50%;
-    background-color: var(--container-color);
-    color: var(--bg-color);
-    
-}
-
-.social .bx:hover{
-    background-color: var(--headding-color);
-    transition: 0.3s all linear;
-     
-}
 
 /*==========
     headding
@@ -629,36 +511,9 @@ justify-content: center;
     
 
 
-    .menu-icon {
-        display: flex;
-    }
 
-    .navbar{
-        position: absolute;
-        top: 50px;
-        /* right: -100%; */
-        width: 300px;
-height: 100vh;
-background: var(--box-color);
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 50px 20px;
-visibility: collapse;
-opacity: 0;
-    }
 
-    .open-menu{
-        opacity: 1;
-        visibility: visible;
-        right: 0;
-        transition:  0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    .nav-link{
-        display: block;
-        margin: 1rem 0;
-    }
+   
 }
 @media screen and (max-width: 635px){
 

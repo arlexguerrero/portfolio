@@ -1,5 +1,5 @@
-let menu = document.querySelector('.menu-icon');
-let navbar = document.querySelector('.navbar');
+let menu = document.querySelector('.nav .menu-icon');
+let navbar = document.querySelector('.nav .navbar');
 
 menu.onclick = () => {
 	navbar.classList.toggle('open-menu')

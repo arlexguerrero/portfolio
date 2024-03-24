@@ -3,11 +3,13 @@
 :root {
 
     --main-color: #fdf0d5ff ;
-    --body-color: #669bbcff;
+    --body-color: #272727;
     --container-color: rgb(0, 132, 203);
-    --headding-color: #222231;
-    --box-color: #1b1b1b;
+    --headding-color: #0ACACA;
+    --box-color: #023047;
     --bg-color: #fff;
+    --gray-regular: #848484;
+    --withe: #fff;
 
     /* CSS HEX */
     /*--headding-color: #780000ff rojo oscuro;
@@ -98,7 +100,7 @@ li {
 }
 
 .container {
-    max-width: 1049px;
+    max-width: 1440px;
     margin: 0 auto;
     width: 100%;
 }
