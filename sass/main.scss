@@ -1,6 +1,18 @@
+
 //Base
 @forward 'base/reset';
 @forward 'base/variables';
+@forward 'base/global';
+
+
+
+//componentes
+
+@forward 'componentes/acordeon';
+
+//mixins
+
+@forward 'mixins/layout';
 
 //Layout 
 @forward 'layout/header';

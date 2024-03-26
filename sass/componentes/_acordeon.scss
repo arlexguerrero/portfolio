@@ -1,0 +1,42 @@
+.acordeon-item {
+
+    .acordeon-header {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        border-bottom: 2px solid var(--headding-color);
+        h3{
+            color: var(--headding-color);
+            font-size: 2rem;
+        }
+    
+        img{
+            width: 30px;
+        }
+        
+       
+      }
+
+      .acordeon-content {
+        padding: 10px;
+        display: none;
+    
+        p, ul, li{
+            color: black;
+
+        };
+
+        ul li{
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+            list-style: disc;
+            list-style-image: var(--headding-color);
+        };
+      }
+    
+  }
+  
+ 
+  
+  

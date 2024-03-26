@@ -113,3 +113,31 @@ pestanas.forEach(function(tab, tab_index){
 		});
 	});
 });
+
+
+document.addEventListener("DOMContentLoaded", function(){
+
+ const acordeonItems = document.querySelectorAll(".acordeon-item");
+
+ acordeonItems.forEach(item => {
+	const header = item.querySelector(".acordeon-header");
+	const content = item.querySelector(".acordeon-content");
+
+	header.addEventListener("click", () => {
+		const isOpen = item.classList.contains("active");
+
+		acordeonItems.forEach(item => {
+			item.classList.remove("active");
+			item.querySelector(".acordeon-content").style.display = "none";
+			console.log("se cerro");
+		});
+
+		if (!isOpen){
+			item.classList.add("active");
+			content.style.display = "block";
+		}
+	});
+ });
+
+
+});
