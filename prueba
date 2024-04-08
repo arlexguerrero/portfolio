@@ -1,0 +1,27 @@
+    <section class="services container" id="servicios">
+       
+        <!--services content-->
+        <div class="services-content">
+
+            <div class="services-box">
+                <i class='bx bx-brush'></i>
+                <h2>Diseño web</h2>
+                <p>UI - UX</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-code'></i>
+                <h2>Maquetación web</h2>
+                <p>HTML CSS Vanilla javascript</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-registered'></i>
+                <h2>Branding</h2>
+                <p>Produccion de piezas comerciales</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-cube'></i>
+                <h2>ArchViz</h2>
+                <p>Modelado arquitectonico</p>
+            </div>
+        </div>
+    </section>

@@ -86,6 +86,39 @@ window.addEventListener('scroll', () => {
 	ScrollTop.classList.toggle('scroll-active', window.scrollY >= 400);
 });
 
+// tabs experiencia
+
+// Función para mostrar el contenido de una pestaña y activarla
+function openTab(tabName) {
+	var i, tabcontent, tablinks;
+  
+	// Ocultar todo el contenido de las pestañas
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+	  tabcontent[i].style.display = "none";
+	}
+  
+	// Desactivar todas las pestañas
+	tablinks = document.getElementsByClassName("tabs-tablink__tablink");
+	for (i = 0; i < tablinks.length; i++) {
+	  tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+  
+	// Mostrar el contenido de la pestaña seleccionada y activarla
+	document.getElementById(tabName).style.display = "block";
+	document.getElementById(tabName + "Btn").className += " active";
+  }
+  
+  // Asignar eventos de clic a los botones de los tabs
+  document.getElementById("tab1Btn").addEventListener("click", function() {
+	openTab("tab1");
+  });
+  document.getElementById("tab2Btn").addEventListener("click", function() {
+	openTab("tab2");
+  });
+  
+  // Por defecto, mostrar la primera pestaña al cargar la página
+  openTab("tab1");
 
 
 

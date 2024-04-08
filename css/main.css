@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;500;700&family=Raleway:wght@600&display=swap");
 * {
   font-family: "Poppins", sans-serif;
@@ -273,6 +274,38 @@ header {
   transition: 0.3s all;
 }
 
+/*menu icon*/
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  cursor: pointer;
+  z-index: 200;
+  transition: 0.3s;
+}
+
+.menu-icon div {
+  display: block;
+  background: var(--bg-color);
+  height: 2px;
+  width: 24px;
+  transition: 0.3s;
+}
+
+.move .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.move .line2 {
+  opacity: 0;
+}
+
+.move .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
 /*==========
     Home
 ===========*/
@@ -474,7 +507,7 @@ About me
   font-size: 1.2rem;
 }
 .about .btn:hover {
-  background: var(--headding-color);
+  background: var(--body-color);
   transition: 0.3s all linear;
 }
 .about .about-text {
@@ -488,6 +521,260 @@ About me
   text-align: start;
   margin-bottom: 1.5rem;
   color: var(--box-color);
+}
+
+/*========
+Experiencia
+==========*/
+/*experience*/
+.projects {
+  min-height: 100vh;
+  max-width: 1058px;
+}
+.projects-intro {
+  margin-bottom: 1rem;
+}
+.projects-tabs {
+  width: 100%;
+  margin-top: 2rem;
+}
+.projects-tabs .tabs-tablink {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.projects-tabs .tabs-tablink__tablink {
+  display: flex;
+  background-color: white;
+  border-radius: 2rem;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 24px;
+  gap: 1rem;
+  transition: background-color 0.3s;
+  font-size: 1.5rem;
+  color: #023047;
+}
+.projects-tabs .tabs-tablink__tablink img {
+  height: 24px;
+}
+.projects-contet {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+}
+.projects-contet__timeline {
+  border-left: 3px solid var(--headding-color);
+  padding-left: 0rem;
+  padding-top: 1rem;
+  grid-column: 1/2;
+}
+@media screen and (max-width: 768px) {
+  .projects-contet__timeline {
+    grid-column: 1/3;
+    margin-top: 3rem;
+  }
+}
+.projects-contet__timeline-item {
+  padding-left: 3rem;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.projects-contet__timeline-item h3 {
+  position: relative;
+}
+.projects-contet__timeline-item h3::after {
+  content: url("../img/empresa-icon.svg");
+  width: 15px;
+  height: 17px;
+  left: -23px;
+  top: 0;
+  position: absolute;
+}
+.projects-contet__timeline-item ul {
+  padding-left: 1.5rem;
+}
+.projects-contet__timeline-item ul li {
+  list-style: disc;
+}
+.projects-contet__timeline-item strong {
+  color: var(--headding-color);
+}
+.projects-contet__timeline-item::after {
+  content: "";
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: -13px;
+  top: 0px;
+  background-color: var(--headding-color);
+  border-radius: 50%;
+}
+.projects-contet__img {
+  grid-auto-flow: 2/3;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .projects-contet__img {
+    grid-column: 1/3;
+    margin-top: 2rem;
+  }
+}
+.projects .project-box {
+  padding: 20px 10px;
+  background: var(--box-color);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+}
+.projects .project-img {
+  padding: 20px 10px;
+  background: var(--box-color);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+}
+.projects .project-box h2 {
+  font-size: 1.2rem;
+}
+.projects .project-box span {
+  font-size: 0.845rem;
+}
+
+/* Estilo de los botones de los tabs */
+.tablink:hover {
+  background-color: #ddd;
+}
+
+/* Estilo del contenido de los tabs */
+.tabcontent {
+  display: none;
+  padding: 20px;
+}
+
+/* Estilo para mostrar la pestaña activa */
+.active {
+  display: block;
+}
+
+.btn-experience {
+  font-size: 1.4rem;
+  color: var(--main-color);
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px dashed var(--bg-color);
+  display: block;
+  height: 2em;
+  width: 2em;
+  margin: 12px auto;
+}
+
+/*portfolio*/
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: -1000;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsla(234, 45%, 16%, 0.7);
+}
+
+.portfolio-overlay h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.portfolio-overlay .bx {
+  font-size: 24px;
+  padding: 10px;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 4px;
+}
+
+.portfolio-overlay .bx:hover {
+  background: #546eff;
+  transition: 0.3s all linear;
+}
+
+.portfolio-box:hover .portfolio-overlay {
+  top: 0;
+  transition: 0.3s all ease 0s;
+}
+
+/*========
+Servicios
+==========*/
+.services .services-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.services .services-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background: var(--container-color);
+  border-radius: 0.4rem;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.services .services-box:hover {
+  transform: scale(1.05);
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+.services .services-box .bx {
+  font-size: 1.4rem;
+  color: var(--main-color);
+  padding: 10px;
+  border-radius: 5rem;
+  border: 2px dashed var(--bg-color);
+}
+.services .services-box h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  color: var(--main-color);
+}
+.services .services-box p {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=main.css.map */

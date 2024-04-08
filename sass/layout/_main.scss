@@ -236,7 +236,7 @@ About me
     }
     
     .btn:hover{
-        background: var(--headding-color);
+        background: var(--body-color);
         transition: 0.3s all linear;
     } 
     
@@ -259,6 +259,309 @@ About me
     }
 
 
+
+}
+
+/*========
+Experiencia
+==========*/
+
+/*experience*/
+
+.projects{
+    min-height: 100vh;
+    max-width: 1058px;
+    &-intro{
+        margin-bottom: 1rem;
+    }
+
+    &-tabs{
+        width: 100%;
+        margin-top: 2rem;
+        .tabs-tablink{
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            gap: 2rem;
+
+            &__tablink{
+                display: flex;
+                background-color: white;
+                border-radius: 2rem;
+               
+                border: none;
+                align-items: center;
+                justify-content: center;
+                outline: none;
+                cursor: pointer;
+                padding: 10px 24px;
+                gap: 1rem;
+                transition: background-color 0.3s;
+                font-size: 1.5rem;
+                color: #023047;
+
+                img{
+                    height: 24px;
+                }
+                
+            }
+        }
+
+      
+    }
+
+    &-contet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-content: center;
+
+        &__timeline{
+            border-left: 3px solid var(--headding-color);
+            padding-left: 0rem;
+            padding-top: 1rem;
+            grid-column: 1 / 2;
+            @media screen and (max-width: 768px) {
+                grid-column: 1 / 3;
+                margin-top: 3rem;
+            }
+
+            &-item{
+                padding-left: 3rem;
+                position: relative;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                h3{
+                    position: relative;
+                }
+                h3::after{
+                    content: url('../img/empresa-icon.svg');
+                    width: 15px;
+                    height: 17px;
+                    left: -23px;
+                    top: 0;
+                    position: absolute;
+                }
+
+                ul{
+                    padding-left: 1.5rem;
+                    li{
+
+                        list-style: disc;
+                        
+                    }
+                }
+
+                strong{
+                    color: var(--headding-color);
+                }
+            }
+            &-item::after{
+                content: "";
+                height: 24px;
+                width: 24px;
+                position: absolute;
+                left: -13px;
+                top: 0px;
+                background-color: var(--headding-color);
+                border-radius: 50%;
+            }
+            
+        }
+
+        &__img{
+            grid-auto-flow: 2 / 3;
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+                grid-column: 1 / 3;
+                margin-top: 2rem;
+            }
+
+        }
+        
+    }
+
+    .project-box{
+        padding: 20px 10px;
+        background: var(--box-color);
+        border-radius: 0.4rem;
+        display: flex;
+        flex-direction: column;
+       grid-column: 1 / 2;
+
+    }
+    .project-img{
+        padding: 20px 10px;
+        background: var(--box-color);
+        border-radius: 0.4rem;
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / 2;
+       
+    }
+
+    
+    .project-box h2{
+        font-size: 1.2rem;
+    }
+    
+    .project-box span{
+        font-size: 0.845rem;
+    }
+    
+}
+
+/* Estilo de los botones de los tabs */
+.tablink {
+   
+  }
+  
+  .tablink:hover {
+    background-color: #ddd;
+  }
+  
+  /* Estilo del contenido de los tabs */
+  .tabcontent {
+    display: none;
+    padding: 20px;
+  }
+  
+  /* Estilo para mostrar la pestaña activa */
+  .active {
+    display: block;
+  }
+
+.btn-experience {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px dashed var(--bg-color);
+    display: block;
+    height: 2em;
+    width: 2em;
+    margin: 12px auto;;
+}
+
+
+
+    
+   
+    
+
+/*portfolio*/
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.portfolio-box{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+}
+
+.portfolio-img{
+    width: 100%;
+    height: 100%;
+object-position: center;
+    object-fit: cover;
+}
+
+.portfolio-overlay{
+    position: absolute;
+    top: -1000;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(234,45%,16%,0.7);
+}
+
+.portfolio-overlay h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom:  10px;
+}
+
+.portfolio-overlay .bx{
+    font-size: 24px;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 4px;
+}
+
+.portfolio-overlay .bx:hover{
+    background: #546eff;
+    transition: 0.3s all linear;
+}
+
+.portfolio-box:hover .portfolio-overlay{
+    top: 0;
+    transition: 0.3s all ease 0s;
+}
+
+/*========
+Servicios
+==========*/
+
+
+.services{
+
+    .services-content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        }
+
+        .services-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+            background: var(--container-color);
+            border-radius: 0.4rem;
+            transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+            
+            }
+            
+            .services-box:hover{
+            transform: scale(1.05);
+            transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+            cursor: pointer;
+            }
+            
+            .services-box .bx{
+            font-size: 1.4rem;
+            color: var(--main-color);
+            padding: 10px;
+            border-radius: 5rem;
+            border: 2px dashed var(--bg-color);
+            }
+            
+            .services-box h2{
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0.5rem 0;
+            color: var(--main-color);
+            }
+            
+            .services-box p{
+            font-size: 0.9rem;
+            }
+        
 
 }
 
