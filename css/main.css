@@ -573,6 +573,7 @@ Experiencia
   padding-left: 0rem;
   padding-top: 1rem;
   grid-column: 1/2;
+  height: fit-content;
 }
 @media screen and (max-width: 768px) {
   .projects-contet__timeline {
