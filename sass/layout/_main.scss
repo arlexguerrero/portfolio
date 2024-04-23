@@ -8,12 +8,13 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 7rem;
+    background-color: var(--body-color);
 
     &-content{
         position: relative;
-        max-width: 1440px;
+        max-width: 1058px;
         width: 100%;
-        margin: auto;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -266,11 +267,10 @@ About me
 Experiencia
 ==========*/
 
-/*experience*/
 
 .projects{
     min-height: 100vh;
-    max-width: 1058px;
+    background-color: var(--body-color);
     &-intro{
         margin-bottom: 1rem;
     }
@@ -446,11 +446,121 @@ Experiencia
     margin: 12px auto;;
 }
 
+/*========
+Servicios
+==========*/
 
 
-    
-   
-    
+.services{
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .services-content{
+        display: grid;
+        width: 100%;
+        max-width: 1058px;
+        margin: 0 auto;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+
+        &__text{
+            grid-column: 1 / -1;
+            color: #333333;
+            margin-bottom: 1rem;
+        }
+
+        &__items{
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+
+            .services-box{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                padding: 1rem;
+                gap: 24px;
+                border: solid 1px var(--headding-color);
+                border-radius: 1rem;
+                transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+                &__txt{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: start;
+                    height: 100%;
+                    a{
+                        font-weight: 700;
+                        color: var(--box-color);
+                    }
+                    a:hover{
+                        color: var(--container-color);
+                    }
+                   &-cont {
+                    color: var(--body-color);
+                    h5{
+                        color: var(--box-color);
+                    }
+                   }
+                }
+
+                &__img{
+                    border-right: solid 1px var(--body-color);
+                    width: 50%;
+                    display: block;
+                    height: 100%;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    img{
+                       
+                       align-items: center;
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                
+                }
+                
+                // .services-box:hover{
+                // transform: scale(1.05);
+                // transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+                // cursor: pointer;
+                // }
+                
+                // .services-box .bx{
+                // font-size: 1.4rem;
+                // color: var(--main-color);
+                // padding: 10px;
+                // border-radius: 5rem;
+                // border: 2px dashed var(--bg-color);
+                // }
+                
+                // .services-box h2{
+                // font-size: 1.1rem;
+                // font-weight: 500;
+                // margin: 0.5rem 0;
+                // color: var(--main-color);
+                // }
+                
+                // .services-box p{
+                // font-size: 0.9rem;
+                // }
+            
+        }
+
+        }
+
+        
+
+}
 
 /*portfolio*/
 
@@ -513,57 +623,6 @@ object-position: center;
     transition: 0.3s all ease 0s;
 }
 
-/*========
-Servicios
-==========*/
 
-
-.services{
-
-    .services-content{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        }
-
-        .services-box{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 15px;
-            background: var(--container-color);
-            border-radius: 0.4rem;
-            transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-            
-            }
-            
-            .services-box:hover{
-            transform: scale(1.05);
-            transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-            cursor: pointer;
-            }
-            
-            .services-box .bx{
-            font-size: 1.4rem;
-            color: var(--main-color);
-            padding: 10px;
-            border-radius: 5rem;
-            border: 2px dashed var(--bg-color);
-            }
-            
-            .services-box h2{
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin: 0.5rem 0;
-            color: var(--main-color);
-            }
-            
-            .services-box p{
-            font-size: 0.9rem;
-            }
-        
-
-}
 
 
