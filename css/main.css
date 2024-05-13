@@ -1024,12 +1024,12 @@ Servicios
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-color: #262626;
+  background-color: var(--box-color);
   border-radius: 50% !important;
   margin: 0 5px;
 }
 .services .software .owl-carousel .owl-dot.active {
-  background-color: #49A9F5;
+  background-color: var(--headding-color);
 }
 
 /*portfolio*/
