@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(){
+
 let menu = document.querySelector('.nav .menu-icon');
 let navbar = document.querySelector('.nav .navbar');
 
@@ -11,18 +13,6 @@ window.onscroll = () => {
 	menu.classList.remove('move')
 }
 
-var swiper = new Swiper(".reviews-content", {
-	spaceBetween: 30,
-	centeredSlides: true,
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false,
-	},
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-});
 
 
 /*email js*/
@@ -148,7 +138,7 @@ pestanas.forEach(function(tab, tab_index){
 });
 
 
-document.addEventListener("DOMContentLoaded", function(){
+
 
  const acordeonItems = document.querySelectorAll(".acordeon-item");
 
@@ -171,6 +161,30 @@ document.addEventListener("DOMContentLoaded", function(){
 		}
 	});
  });
+
+//owl carousel
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,
+	margin: 10,
+	autoWidth:true,
+	nav: true, // Desactiva los controles de navegación predeterminados
+//   // Agrega tus propias clases de navegación personalizadas
+//   navContainer: '.custom-nav',
+  navText: ["<img src='img/left-arrow.svg' alt=''>", "<img src='img/right-arrow.svg' alt=''>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:1
+        }
+    }
+})
 
 
 });

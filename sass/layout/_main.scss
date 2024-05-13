@@ -18,6 +18,15 @@
         padding-top: 3rem;
     }
 
+    @media screen and (max-width: 992px) {
+        min-height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5rem;
+        padding-top: 3rem;
+    }
+
     &-content{
         position: relative;
         max-width: 1058px;
@@ -27,7 +36,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 5rem;
+        gap: 1rem;
+        padding: 0 2rem;
 
      @media screen and (min-width: 768px){
         flex-direction: row;
@@ -596,12 +606,11 @@ Servicios
                         height: 310px;
                     }
 
-                    @media  screen and (max-width: 768px) {
+                    @media  screen and (max-width: 767px) {
                         border-bottom: solid 1px var(--body-color);
                         border-right: none;
                         width: 100%;
                         flex-shrink: 0;
-                        max-width: 310px;
                         height: 310px;
                     }
 
@@ -662,6 +671,7 @@ Servicios
         }
         h3{
             margin-top: 3rem;
+            margin-bottom: 1rem;
             color: var(--box-color);
             font-size: 2rem;
         }
@@ -688,8 +698,15 @@ Servicios
             gap: 1.5rem;
 
             @media screen and (max-width: 767px){
-                width: 100%;
-            }
+                max-width: 100%;
+                    height: 100px;
+                    flex-wrap: nowrap;
+                    flex-direction: row;
+                    width: 100%;
+                    overflow-x: auto;
+                    margin-bottom: 1rem;
+                }
+            
             &-box{
                 width: 100%;
                 padding: 1rem;
@@ -698,6 +715,12 @@ Servicios
                 border: 1px solid var(--headding-color);
                 border-radius: 8px;
                 align-items: center;
+
+                @media screen and (max-width: 767px){
+                    flex-shrink: 0;
+                    width: 90%;
+                    height: 91px;
+                    }
 
                 .skills-box__image{
                     height: 100%;
@@ -752,7 +775,118 @@ Servicios
         }
 
      }  
+    
+     .software-item {
+        display: flex;
+        flex-direction: row;
+         border-radius: 8px;
+         padding: 1rem;
+         align-items: center;
+         gap: 8px;
+        width: fit-content;
+         border: 1px solid var(--headding-color);
+        &__img{
+            
+            img{
+                width: 48px;
+            height: 48px;
+            object-fit: contain;
+            }
+        }
         
+        &__text{
+            text-wrap: wrap;
+            width: 100%;
+            font-weight: 700;
+        }
+    
+     }
+
+     .software{
+        position: relative;
+        .owl-carousel {
+            position: relative;
+            .owl-nav{
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                top: -106px;
+                height: 82px;
+                width: 90px;
+                left: 160px;
+                // Personalizar el color del botón de navegación
+                .owl-prev,
+                .owl-next, span {
+                    font-size: 5rem;
+                    color: black;
+                }           
+            }
+    
+           
+        
+            // .owl-nav.disabled + .owl-dots{
+            //     margin-top: 10px;
+            // }
+            .owl-dots  {
+                text-align: center;
+                margin-top: 1rem;
+              }
+        
+              .owl-dots span {
+                width: 10px;
+                height: 10px;
+                margin:  5px 7px;
+                background: #000F1B!important;
+              }
+              
+              .owl-dots .owl-dot {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-color: #262626;
+                border-radius: 50%!important;
+                margin: 0 5px;
+              }
+              
+              .owl-dot.active {
+                background-color: #49A9F5;
+              }
+         }
+            // .custom-nav {
+            //     position: absolute;
+            //     top: 0px;
+            //     left: 0px;
+            //     z-index: 1000;
+            //     width: 100%;
+            //     display: flex;
+            //     height: 82px;
+            //     justify-content: space-between;
+            //   }
+              
+            //   .custom-nav button {
+            //     background: none;
+            //     border: none;
+            //     cursor: pointer;
+            //   }
+              
+            //   .custom-nav button img {
+            //     width: 30px; /* Ajusta el tamaño según tu diseño */
+            //   }
+              
+            //   .owl-prev {
+            //     left: -50px;
+            //   }
+              
+            //   .owl-next {
+            //     right: -50px;
+            //   }
+
+        
+     }
+     
+
+   
+   
 
 }
 
