@@ -194,4 +194,24 @@ lightGallery(document.getElementById('lightgallery'), {
 	download: true,
 });
 
+lightGallery(document.getElementById('lightgallery2'), {
+	selector: '.card-group-card__img a',
+	thumbnail:true,
+	controls: true,
+	download: true,
+});
+
+lightGallery(document.getElementById('lightgallery3'), {
+	selector: '.card-group-card__img a',
+	thumbnail:true,
+	controls: true,
+	download: true,
+});
+lightGallery(document.getElementById('lightgallery4'), {
+	selector: '.card-group-card__img a',
+	thumbnail:true,
+	controls: true,
+	download: true,
+});
+
 });
