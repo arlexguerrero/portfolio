@@ -184,7 +184,14 @@ $('.owl-carousel').owlCarousel({
             items:1
         }
     }
-})
+});
 
+
+lightGallery(document.getElementById('lightgallery'), {
+	selector: '.card-group-card__img a',
+	thumbnail:true,
+	controls: true,
+	download: true,
+});
 
 });

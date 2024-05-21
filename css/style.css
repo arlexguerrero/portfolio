@@ -6,14 +6,6 @@
 
 
 
-
-
-/*Services*/
-
-
-
-
-
 /*reviews*/
 
 .reviews{
@@ -344,72 +336,6 @@
     Home
 ===========*/
 
-/*===============
-TABS
-==========*/
-
-.portfolio {
-    background-color: #fff;
-}
-
-/* .sistema-pestanas{
-    margin-bottom: ;
-  } */
-  
-  .pestanas ul{
-    display: flex;
-    overflow-x: auto;
-    justify-content: space-between;
-    gap: 1em;
-  }
-
-  .pestanas ul::-webkit-scrollbar {
-    width: 0;
-  }
-  
-  .btn-pestanas {
-    text-decoration: none;
-    color: #fff;
-    padding: 20px 10px;
-    display: inline-block;
-    background: var(--box-color);
-    border-radius: 0.4rem;
-    width: 187px;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-  }
-
-
-  .btn-pestanas:hover{
-    background-color: var(--container-color);
-    color: #fff;
-    transition: all .3s ease-in;
-}
-
-  .btn-activo {
-    background-color: var(--container-color);
-    color: #fff;
-}
-  
-  .contenido-pestanas .bloque img {
-    
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
-    
-  }
-
-  .contenido-pestanas .bloque{
-    display: none;
-  }
-  
-  .contenido-pestanas .bloque.activo{
-    display: block;
-  }
-  
-
-  .container__banner {
-    grid-column: 1 / 13;
-  }
 
   /*---------------------
         Alert
