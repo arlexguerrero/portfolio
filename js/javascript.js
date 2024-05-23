@@ -36,7 +36,7 @@ function validate() {
 validate();
 
 function sendmail(name, email, msg){
-	emailjs.send("service_4s62kpv","template_yd7g9gq",{
+	emailjs.send("service_8tgdwag","template_yd7g9gq",{
 		to_name: email,
 		from_name: name,
 		message: msg,
@@ -45,16 +45,16 @@ function sendmail(name, email, msg){
 
 function emptyerror(){
 	swal({
-		title: "oh noo...",
-		text: "fields can not be empty",
+		title: "Ah ocurrido un error",
+		text: "Los campos no pueden estar vacios",
 		icon: "error",
 	  });
 }
 
 function success(){
 	swal({
-		title: "tha´s great",
-		text: "all ok",
+		title: "¡Genial!",
+		text: "Todo ok",
 		icon: "success",
 	  });
 }

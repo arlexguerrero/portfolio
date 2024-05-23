@@ -114,37 +114,6 @@
     transition: 0.3s all linear;
 }
 
-/*Footer*/
-
-.footer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 1.4rem;
-    padding: 30px 0;
-}
-
-.footer p {
-    font-size: 0.9rem;
-}
-
-.footer-links{
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-}
-
-.footer-links a{
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--bg-color);
-}
-
-.footer-links a:hover{
-
-    color: var(--main-color);
-    transition: 0.3s all linear;
-}
 
 
 /*scroll top*/
@@ -337,26 +306,3 @@
 ===========*/
 
 
-  /*---------------------
-        Alert
- -------------------- */
-
- .alert-containert {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    
- }
-
- .alert-containert .bxs-error {
-    color: var(--box-color);
-    margin-right: .5rem;
-    
- }
-
- .alert-containert p{
-    color: var(--box-color);
-    font-size: 1em;
-    font-weight: 400;
- }
