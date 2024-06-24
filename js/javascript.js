@@ -214,4 +214,27 @@ lightGallery(document.getElementById('lightgallery4'), {
 	download: true,
 });
 
+
+new AnimationScroll({
+    selector: ".home-text",
+    trigger: .7,
+    transform: "-30x%, -0.3o",
+    easing: "ease-in-out",
+    duration: 2,
+    onLoad: false,
+    scrollSpeed: .7,
+    pauseOnScroll: true
+});
+
+new AnimationScroll({
+    selector: ".heading",
+    trigger: .7,
+    transform: " 0.7o",
+    easing: "ease-in-out",
+    duration: 2,
+    onLoad: false,
+    scrollSpeed: .7,
+    pauseOnScroll: true
+});
+
 });
