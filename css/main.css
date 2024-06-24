@@ -1269,7 +1269,7 @@ Servicios
 
 .whatsapp-button {
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
   background-color: #25D366;
   color: white;
@@ -1294,6 +1294,43 @@ Servicios
 .whatsapp-button a:hover {
   color: white;
   text-decoration: none;
+}
+
+/*Contact form*/
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  padding: 15px;
+  color: var(--bg-color);
+  background: var(--box-color);
+  border-radius: 0.4rem;
+}
+
+.contact-form .send-btn {
+  width: 200px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 500px;
+  text-transform: uppercase;
+  padding: 12px;
+  background: var(--box-color);
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.send-btn:hover {
+  color: var(--headding-color);
+  transition: 0.3s all linear;
 }
 
 /*# sourceMappingURL=main.css.map */
