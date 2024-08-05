@@ -912,7 +912,7 @@ Servicios
 @media screen and (max-width: 767px) {
   .services .skills-content__items {
     max-width: 100%;
-    height: 100px;
+    height: fit-content;
     flex-wrap: nowrap;
     flex-direction: row;
     width: 100%;
